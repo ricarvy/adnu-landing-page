@@ -4,25 +4,28 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Draw and Understand',
-    template: '%s | Draw and Understand',
+    default: 'ADNU - Advanced Draw And Understand',
+    template: '%s | ADNU',
   },
   description:
-    'A novel approach to visual understanding through sketch-based interaction',
+    'Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension. ICML 2025',
   keywords: [
-    'Computer Vision',
-    'Deep Learning',
-    'Sketch-based Interaction',
-    'Visual Understanding',
-    'Machine Learning',
-    'Human-Computer Interaction',
+    'Multimodal LLM',
+    'Visual Prompting',
+    'Free-Shape Prompts',
+    'Pixel-Level Comprehension',
+    'Dynamic Gating',
+    'Hyper-Graph Reasoning',
+    'Multilingual Understanding',
+    'Chinese-MDVP',
+    'ICML 2025',
   ],
-  authors: [{ name: 'Draw and Understand Team' }],
+  authors: [{ name: 'ADNU Team' }],
   generator: 'Next.js',
   openGraph: {
-    title: 'Draw and Understand',
+    title: 'ADNU - Advanced Draw And Understand',
     description:
-      'A novel approach to visual understanding through sketch-based interaction',
+      'Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension - ICML 2025',
     type: 'website',
   },
   robots: {

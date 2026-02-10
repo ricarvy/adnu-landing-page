@@ -1,140 +1,145 @@
-# Draw and Understand - Project Website
+# ADNU - Advanced Draw And Understand
 
-这是一个学术项目网站，展示"Draw and Understand"研究项目。
+This is the project website for "Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension" (ICML 2025).
 
-## 项目概述
+## Project Overview
 
-本项目是一个基于 Next.js 16 + shadcn/ui 构建的现代化学术项目网站，用于展示研究成果、论文内容和团队信息。
+ADNU elevates multimodal large language models to genuine pixel-level comprehension by replacing conventional rectangular proxies with learnable free-shape visual prompts. The project website showcases the research paper, methodology, and experimental results.
 
-## 功能特性
+## Key Features
 
-- **首页展示**
-  - 项目简介和核心价值
-  - 三大核心特点展示
-  - 论文快速入口
+- **Free-Shape Visual Prompts**: Replace bounding boxes with arbitrary sketches, polygons, and scribbles for pixel-level precision
+- **Dynamic Gating Mechanism**: Adaptive filtering eliminates performance inversion in multi-target scenarios
+- **Multilingual Support**: Large-scale Chinese-MDVP dataset mitigates English-centric bias
+- **Hyper-Graph Reasoning**: Models high-order semantic relationships with up to 48.1% improvement on 4-hop reasoning tasks
 
-- **论文详情页**
-  - 论文摘要
-  - 方法论介绍
-  - 实验结果
-  - 引用信息和 BibTeX
+## Paper Information
 
-- **响应式设计**
-  - 支持桌面端和移动端
-  - 自适应布局
+- **Title**: Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension
+- **Conference**: ICML 2025 (42nd International Conference on Machine Learning)
+- **Authors**: 8 authors (with equal contribution notation)
+- **Venue**: Vancouver, Canada
 
-- **现代化 UI**
-  - 使用 shadcn/ui 组件库
-  - 简洁大气的学术风格
-  - 支持深色模式
+## Main Results
 
-## 页面结构
+### MDVP-Bench Performance
+- Referral Accuracy: **+4.7%**
+- Reasoning Accuracy: **+5.6%**
+- Zero-shot Chinese OCR: **+24.7%**
+
+### Cultural Tasks (Chinese-MDVP)
+- Festival Recognition: **+43.3%**
+- Idiom Understanding: **+43.7%**
+- Traditional Object Description: **+35.4%**
+- Chinese OCR: **+24.7%**
+- Complex Relations: **+33.0%**
+- **Average Improvement: +36.0%**
+
+### Multi-Hop Reasoning
+- 1-hop: +1.0%
+- 2-hop: +9.9%
+- 3-hop: **+30.6%**
+- 4-hop: **+48.1%**
+
+## Website Structure
 
 ```
-/                    # 首页 - 项目概览
-/paper              # 论文详情页
+/                    # Homepage - Abstract, Innovations, Results Overview
+/paper              # Full paper details - Method, Experiments, Results
+/paper.pdf          # PDF download
 ```
 
-## 自定义内容
+## Customization Guide
 
-### 修改论文信息
+### Update Author Information
 
-编辑 `src/app/page.tsx` 和 `src/app/paper/page.tsx`，替换以下占位内容：
+Edit `src/app/page.tsx` and `src/app/paper/page.tsx`, replace the placeholder author names:
 
-1. **作者信息**
-   - `Author Name 1, Author Name 2, Author Name 3`
-   - `Affiliation`
+```tsx
+// Current placeholders
+Firstname1 Lastname1*, Firstname2 Lastname2*, ...
 
-2. **论文标题**
-   - `Draw and Understand: Visual Understanding through Sketch-based Interaction`
+// Replace with actual names
+John Doe*, Jane Smith*, ...
+```
 
-3. **论文内容**
-   - Abstract（摘要）
-   - Method（方法论）
-   - Results（结果）
+### Update Affiliation Information
 
-4. **引用信息**
-   - BibTeX 格式
-   - 会议信息
+Edit `src/app/paper/page.tsx`:
 
-### 添加论文 PDF
+```tsx
+<p>1Department of XXX, University of YYY, Location, Country</p>
+<p>2Company Name, Location, Country</p>
+<p>3School of ZZZ, Institute of WWW, Location, Country</p>
+```
 
-1. 将 PDF 文件放入 `public/` 目录
-2. 更新 `src/app/paper/page.tsx` 中的链接
+### Add Links
 
-### 添加 Demo
+Update these sections in `src/app/paper/page.tsx`:
 
-在 `src/app/page.tsx` 的 Demo 部分添加实际演示内容。
+1. **arXiv Link**: Update the `href` in the arXiv download button
+2. **GitHub Repository**: Update the Code button link
+3. **Dataset Link**: Update the Dataset button link
 
-## 技术栈
+### Add Demo or Video
 
-- **框架**: Next.js 16 (App Router)
-- **UI 组件**: shadcn/ui (Radix UI + Tailwind CSS)
-- **样式**: Tailwind CSS 4
-- **图标**: Lucide React
-- **语言**: TypeScript
+In `src/app/page.tsx`, you can add a video section:
 
-## 开发指南
+```tsx
+<section id="demo" className="container mx-auto px-4 py-16">
+  <h2 className="mb-8 text-3xl font-bold">Demo</h2>
+  <div className="aspect-video rounded-lg border bg-muted">
+    {/* Add your video or demo here */}
+  </div>
+</section>
+```
 
-### 启动开发服务器
+## Tech Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **UI Components**: shadcn/ui (Radix UI + Tailwind CSS)
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Language**: TypeScript
+
+## Development
+
+### Start Development Server
 
 ```bash
 coze dev
 ```
 
-访问 http://localhost:5000
+Visit http://localhost:5000
 
-### 构建生产版本
+### Build Production Version
 
 ```bash
 coze build
 ```
 
-### 启动生产服务器
+### Start Production Server
 
 ```bash
 coze start
 ```
 
-## 自定义建议
+## Deployment
 
-### 添加更多页面
+The project uses `.coze` configuration file for one-click deployment.
 
-1. 在 `src/app/` 下创建新文件夹
-2. 添加 `page.tsx` 文件
-3. 更新导航链接
+## Citation
 
-### 添加主题色
-
-编辑 `src/app/globals.css` 中的 CSS 变量：
-
-```css
-@layer base {
-  :root {
-    --primary: ...
-    --secondary: ...
-  }
+```bibtex
+@inproceedings{lastname2025advanced,
+  title={Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension},
+  author={Firstname1 Lastname1 and Firstname2 Lastname2 and Firstname3 Lastname3 and Firstname4 Lastname4 and Firstname5 Lastname5 and Firstname6 Lastname6 and Firstname7 Lastname7 and Firstname8 Lastname8},
+  booktitle={Proceedings of the 42nd International Conference on Machine Learning},
+  year={2025},
+  organization={PMLR}
 }
 ```
 
-### 添加动画效果
+## License
 
-可以使用 `framer-motion` 或 CSS transitions 添加动画：
-
-```tsx
-<m.div
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 0.5 }}
->
-  内容
-</m.div>
-```
-
-## 部署
-
-本项目使用 `.coze` 配置文件，可以一键部署到生产环境。
-
-## 许可证
-
-© 2024 Draw and Understand. All rights reserved.
+© 2025 ADNU. ICML 2025
