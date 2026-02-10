@@ -1,6 +1,6 @@
 # ADNU - Advanced Draw And Understand
 
-This is the project website for "Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension" (ICML 2025).
+This is the project website for "Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension" (NeurIPS 2026).
 
 ## Project Overview
 
@@ -16,9 +16,9 @@ ADNU elevates multimodal large language models to genuine pixel-level comprehens
 ## Paper Information
 
 - **Title**: Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension
-- **Conference**: ICML 2025 (42nd International Conference on Machine Learning)
+- **Conference**: NeurIPS 2026 (40th International Conference on Neural Information Processing Systems)
 - **Authors**: 8 authors (with equal contribution notation)
-- **Venue**: Vancouver, Canada
+- **Venue**: To be announced
 
 ## Main Results
 
@@ -131,15 +131,15 @@ The project uses `.coze` configuration file for one-click deployment.
 ## Citation
 
 ```bibtex
-@inproceedings{lastname2025advanced,
+@inproceedings{lastname2026advanced,
   title={Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension},
   author={Firstname1 Lastname1 and Firstname2 Lastname2 and Firstname3 Lastname3 and Firstname4 Lastname4 and Firstname5 Lastname5 and Firstname6 Lastname6 and Firstname7 Lastname7 and Firstname8 Lastname8},
-  booktitle={Proceedings of the 42nd International Conference on Machine Learning},
-  year={2025},
-  organization={PMLR}
+  booktitle={Proceedings of the 40th International Conference on Neural Information Processing Systems},
+  year={2026},
+  organization={NeurIPS}
 }
 ```
 
 ## License
 
-© 2025 ADNU. ICML 2025
+© 2026 ADNU. NeurIPS 2026

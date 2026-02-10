@@ -32,7 +32,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-24 md:py-32">
         <div className="mx-auto max-w-5xl text-center">
           <div className="mb-6 inline-flex items-center rounded-full border bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-            ICML 2025
+            NeurIPS 2026
           </div>
           <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
             Advanced Draw And Understand
@@ -200,7 +200,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-8 text-3xl font-bold">Authors</h2>
           <p className="mb-4 text-muted-foreground">
-            Proceedings of the 42nd International Conference on Machine Learning (ICML 2025)
+            Proceedings of the 40th International Conference on Neural Information Processing Systems (NeurIPS 2026)
           </p>
           <div className="flex flex-wrap gap-2">
             <span className="rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
@@ -255,7 +255,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-8">
           <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-muted-foreground">
-              © 2025 ADNU. ICML 2025
+              © 2026 ADNU. NeurIPS 2026
             </p>
             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
               <Link href="/paper" className="transition-colors hover:text-foreground">

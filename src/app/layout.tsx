@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: '%s | ADNU',
   },
   description:
-    'Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension. ICML 2025',
+    'Advanced Draw And Understand: Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension. NeurIPS 2026',
   keywords: [
     'Multimodal LLM',
     'Visual Prompting',
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     'Hyper-Graph Reasoning',
     'Multilingual Understanding',
     'Chinese-MDVP',
-    'ICML 2025',
+    'NeurIPS 2026',
   ],
   authors: [{ name: 'ADNU Team' }],
   generator: 'Next.js',
   openGraph: {
     title: 'ADNU - Advanced Draw And Understand',
     description:
-      'Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension - ICML 2025',
+      'Free-Shape Visual Prompting for Pixel-Level Multimodal Comprehension - NeurIPS 2026',
     type: 'website',
   },
   robots: {

@@ -41,7 +41,7 @@ export default function PaperPage() {
         <article className="mx-auto max-w-4xl">
           {/* Conference Badge */}
           <div className="mb-6 inline-flex items-center rounded-full border bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-            ICML 2025
+            NeurIPS 2026
           </div>
 
           {/* Title */}
@@ -326,7 +326,7 @@ export default function PaperPage() {
         <div className="container mx-auto px-4 py-8">
           <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-4 sm:flex-row">
             <p className="text-sm text-muted-foreground">
-              © 2025 ADNU. ICML 2025
+              © 2026 ADNU. NeurIPS 2026
             </p>
             <div className="flex items-center space-x-4 text-sm text-muted-foreground">
               <Link href="#" className="transition-colors hover:text-foreground">
