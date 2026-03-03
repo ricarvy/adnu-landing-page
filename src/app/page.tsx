@@ -268,7 +268,7 @@ export default function Home() {
           </div>
           
           {/* Multilingual Table */}
-          <div className="rounded-lg border bg-card overflow-hidden shadow-sm">
+          <div className="rounded-lg border bg-card overflow-hidden shadow-sm mb-8">
             <div className="bg-muted/50 px-6 py-4 border-b">
               <h3 className="font-semibold">Zero-shot Multilingual Capability</h3>
             </div>
@@ -303,6 +303,106 @@ export default function Home() {
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+          
+          {/* Qualitative Examples */}
+          <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm mb-8">
+            <h3 className="mb-4 text-lg font-semibold">Cultural Understanding Examples</h3>
+            <div className="space-y-4">
+              <div className="rounded-lg bg-muted/30 p-4">
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="rounded bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">Chinese (ZH)</span>
+                  <span className="text-xs text-muted-foreground">Dragon Boat Festival scene</span>
+                </div>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground">Baseline Output</p>
+                    <p className="text-sm italic text-muted-foreground">"The table has some wrapped green parcels. It might be a picnic or a generic celebration."</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-primary">ADNU Output</p>
+                    <p className="text-sm">"These are <strong>Zongzi</strong> (sticky rice dumplings wrapped in bamboo leaves), traditionally eaten during the <strong>Dragon Boat Festival</strong>."</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="rounded-lg bg-muted/30 p-4">
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="rounded bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">German (DE)</span>
+                  <span className="text-xs text-muted-foreground">People wearing traditional Bavarian clothing</span>
+                </div>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground">Baseline Output</p>
+                    <p className="text-sm italic text-muted-foreground">"People are wearing old-fashioned dresses and leather shorts. It looks like a costume party."</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-primary">ADNU Output</p>
+                    <p className="text-sm">"The women are wearing <strong>Dirndls</strong> and the men are in <strong>Lederhosen</strong>. This is traditional Bavarian attire, likely for <strong>Oktoberfest</strong>."</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-muted/30 p-4">
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="rounded bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">Japanese (JA)</span>
+                  <span className="text-xs text-muted-foreground">Family eating under cherry blossom trees</span>
+                </div>
+                <div className="grid gap-4 md:grid-cols-2">
+                  <div>
+                    <p className="text-xs font-semibold text-muted-foreground">Baseline Output</p>
+                    <p className="text-sm italic text-muted-foreground">"A family is having a lunch in a park with pink trees."</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold text-primary">ADNU Output</p>
+                    <p className="text-sm">"This is <strong>Hanami</strong> (flower viewing), a traditional custom of enjoying the transient beauty of <strong>Sakura</strong> (cherry blossoms)."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Future Directions */}
+          <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
+            <h3 className="mb-4 text-lg font-semibold">Future Directions</h3>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="flex gap-3">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <TrendingUp className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-sm">Spatio-Temporal Domains</h4>
+                  <p className="text-xs text-muted-foreground">Extending free-shape prompting to video understanding for dynamic trajectory tracking.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <Globe className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-sm">Broader Cultural Generalization</h4>
+                  <p className="text-xs text-muted-foreground">Expanding to under-represented languages and cultures like Hindi, Arabic, and Swahili.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <Users className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-sm">Embodied Interaction</h4>
+                  <p className="text-xs text-muted-foreground">Integrating with robotic manipulation for fine-grained physical world actions.</p>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <Zap className="h-4 w-4" />
+                </div>
+                <div>
+                  <h4 className="font-medium text-sm">Real-time On-Device Inference</h4>
+                  <p className="text-xs text-muted-foreground">Optimizing for mobile deployment and privacy-preserving AR applications.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
